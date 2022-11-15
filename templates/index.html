@@ -29,7 +29,8 @@
             <img src="../static/styles/image2vector.svg" alt="file icon" class="left" draggable="false">
             <img src="../static/styles/image2vector.svg" alt="file icon" class="right" draggable="false">
           <form action="/uploader" method="POST" enctype="multipart/form-data">
-
+		<label for="nameInput" class="namee">Enter Your Full Name</label>
+            <input type="text" id="nameInput" name=nameinput class=nameTab>
             <input type="file" id="fileInput" name=fileinput class=inputTab>
             <button class="inputBtn" type="submit">Submit</button>
           </form>
