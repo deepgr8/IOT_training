@@ -20,6 +20,14 @@
         </form> 
       </div>   
   </section>
+	<script>
+      function validateform(){
+          if (document.getElementsByName("nameInput").value==""){
+              alert("Name must be filled out")
+              return false;
+          }
+      }
+  </script>
   <div class="main-div">
     <div>
   <section class="upload-files">
@@ -28,7 +36,7 @@
             <img src="../static/styles/image2vector.svg" alt="file icon" class="center" draggable="false">
             <img src="../static/styles/image2vector.svg" alt="file icon" class="left" draggable="false">
             <img src="../static/styles/image2vector.svg" alt="file icon" class="right" draggable="false">
-          <form action="/uploader" method="POST" enctype="multipart/form-data">
+          <form action="/uploader" method="POST" enctype="multipart/form-data" name="myForm" onsubmit="return validateform()">
 		<label for="nameInput" class="namee">Enter Your Full Name</label>
             <input type="text" id="nameInput" name="nameInput" class=nameTab>
             <input type="file" id="fileInput" name=fileinput class=inputTab>
