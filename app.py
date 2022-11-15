@@ -124,7 +124,6 @@ def uploader():
             content = file.read()
             # print(content)
             
-            name=f.filename
             # file_data = requests.get(content).content
             blob = bucket.blob(name)
             blob.upload_from_string(
@@ -159,8 +158,6 @@ def upload():
         with open(temp.name, 'rb') as file:
             content = file.read()
             # print(content)
-            
-            name=f.filename
             # file_data = requests.get(content).content
             blob = bucket.blob(name)
             blob.upload_from_string(
