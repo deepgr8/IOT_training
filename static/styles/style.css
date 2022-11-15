@@ -350,9 +350,9 @@ body,
 
 @media only screen and (max-width: 700px) {
   input#nameInput {
-    margin-left: -64px;
+    margin-left: -49px;
     margin-top: 60px;
-    width: 30vh;
+    width: 25vh;
     flex: auto;
     padding: 5px;
     display: flex;
