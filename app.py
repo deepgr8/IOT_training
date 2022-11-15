@@ -113,8 +113,7 @@ def uploader():
         f = request.files['fileinput']
         message="Successfully Uploaded"
         global name
-        name=request.form.get('name')
-        
+        name = request.form['nameInput']
         typee=f.content_type
         print(typee)
         temp = tempfile.NamedTemporaryFile(delete=False)
@@ -150,8 +149,7 @@ def upload():
         f = request.files['fileinput']
         
         global name
-        name=request.form.get('name')
-        
+        name = request.form['nameInput']
         typee=f.content_type
         print(typee)
         temp = tempfile.NamedTemporaryFile(delete=False)
