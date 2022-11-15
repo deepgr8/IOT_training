@@ -115,6 +115,27 @@ body,
 .icon-container .center {
   z-index: 2;
 }
+.nameTab{
+    margin-left: -160px;
+    margin-top: 60px;
+    width: 30vh;
+    flex: auto;
+    padding: 5px;
+    display: flex;
+    justify-content: left;
+    position: absolute;
+}
+
+.namee{
+  margin-left: -160px;
+    margin-top: 35px;
+    width: 30vh;
+    flex: auto;
+    padding: 5px;
+    display: flex;
+    justify-content: left;
+    position: absolute;
+}
 .droping {
   margin-left: -250px;
   color: rgb(17 18 18 / 80%);
